@@ -25,6 +25,10 @@ const NAV_ITEMS: Array<NavItem> = [
     label: "Proyectos",
     page: "projects",
   },
+  {
+    label: "Mi CV",
+    page: "https://fedeheisemberg.github.io/federico-cv/",
+  },
 ]
 
 export default function Navbar() {
@@ -32,6 +36,15 @@ export default function Navbar() {
   const currentTheme = theme === "system" ? systemTheme : theme
   const pathname = usePathname()
   const [navbar, setNavbar] = useState(false)
+  
+  // Función para manejar los enlaces internos y externos
+  const handleItemClick = (page: string) => {
+    setNavbar(!navbar)
+    if (page.startsWith("http")) {
+      window.open(page, "_blank")
+    }
+  }
+  
   return (
     <header className="w-full mx-auto  px-4 sm:px-20 fixed top-0 z-50 shadow bg-white dark:bg-stone-900 dark:border-b dark:border-stone-600">
       <div className="justify-between md:items-center md:flex">
@@ -61,13 +74,24 @@ export default function Navbar() {
           >
             <div className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               {NAV_ITEMS.map((item, idx) => {
-                return (
+                return item.page.startsWith("http") ? (
+                  // Enlace externo para el CV
+                  <a
+                    key={idx}
+                    href={item.page}
+                    className="block lg:inline-block text-neutral-900 hover:text-neutral-500 dark:text-neutral-100 cursor-pointer"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setNavbar(!navbar)}
+                  >
+                    {item.label}
+                  </a>
+                ) : (
+                  // Enlace interno para navegación en la página
                   <Link
                     key={idx}
                     to={item.page}
-                    className={
-                      "block lg:inline-block text-neutral-900  hover:text-neutral-500 dark:text-neutral-100 cursor-pointer"
-                    }
+                    className="block lg:inline-block text-neutral-900 hover:text-neutral-500 dark:text-neutral-100 cursor-pointer"
                     activeClass="active"
                     spy={true}
                     smooth={true}
