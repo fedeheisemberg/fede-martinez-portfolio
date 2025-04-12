@@ -32,9 +32,16 @@ const projects = [
   {
     name: "OptionsPro Dashboard",
     description: "Accede gratis a este dashboard para operadores de opciones financieras.",
-    image: "/dashboard.PNG",  // Asegúrate de que la imagen esté en el directorio adecuado
+    image: "/creditscore.PNG",  // Asegúrate de que la imagen esté en el directorio adecuado
     github: "#",  // Puedes agregar el enlace de GitHub si lo tienes
     link: "https://optimaoptionspro.streamlit.app/",
+  },
+  {
+    name: "Modelo de Machine Learning para Puntaje Crediticio",
+    description: "Accede a este modelo interactivo para la predicción del score crediticio basado en un dataset de aproximadamente 1000 clientes.",
+    image: "/dashboard.PNG",  // Asegúrate de que la imagen esté en el directorio adecuado
+    github: "#",  // Puedes agregar el enlace de GitHub si lo tienes
+    link: "https://creditscoremodel.streamlit.app/",
   },
   {
     name: "Mi perfil de Streamlit",
