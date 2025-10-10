@@ -2,17 +2,16 @@ import React from "react";
 
 const skills = [
   { skill: "Python" },
-  { skill: "Anaconda" },
+  { skill: "SQL" },
   { skill: "Tableau" },
-  { skill: "PostgreSQL" },
-  { skill: "Microsoft Excel" },
-  { skill: "AWS" },
+  { skill: "Power BI" },
+  { skill: "Apache Airflow" },
+  { skill: "Apache Spark" },
   { skill: "Google Cloud Platform" },
-  { skill: "Google Suite" },
-  { skill: "Git & Github" },
-  { skill: "Docker" },
-  { skill: "Automatización (RPA)" },
+  { skill: "Excel Avanzado" },
   { skill: "ETL & Data Pipelines" },
+  { skill: "Automatización (RPA)" },
+  { skill: "Git & GitHub" },
 ]
 
 const AboutSection = () => {
@@ -24,68 +23,74 @@ const AboutSection = () => {
           <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></hr>
         </h1>
 
-        <div className="flex flex-col space-y-10 items-stretch justify-center align-top md:space-x-10 md:space-y-0 md:p-4 md:flex-row md:text-left">
+        <div className="flex flex-col space-y-10 md:flex-row md:space-x-10 md:space-y-0 md:p-4 md:text-left">
           <div className="md:w-1/2">
-            <h1 className="text-center text-2xl font-bold mb-6 md:text-left">
-              ¡Conóceme!
-            </h1>
+            <h2 className="text-2xl font-bold mb-6 text-center md:text-left">
+              Un poco sobre mi camino 🚀
+            </h2>
             <p>
-              Estudio Economía y Administración en la Universidad de Congreso. Soy operador de bolsa desde 2020 y un entusiasta de la revolución de las criptomonedas.
+              Estudié <strong>Administración de Empresas</strong>.  
+              Mi pasión por los datos surgió al ver cómo podían transformar la{" "}
+              <strong>toma de decisiones financieras</strong> y optimizar la{" "}
+              <strong>gestión empresarial</strong>.
             </p>
             <br />
             <p>
-              En 2023, Co-fundé Optima Consulting & Management LLC, una empresa que se especializa en ciencia de datos aplicada a las finanzas. Además, ayudo a empresas a automatizar procesos administrativos y optimizar su uso de datos para mejorar la toma de decisiones.
+              En 2023 cofundé <strong>Optima Consulting & Management LLC</strong>, 
+              donde diseñé dashboards y automatizaciones que mejoraron la eficiencia de procesos
+              y redujeron tiempos de análisis. En 2025 trabajé como <strong>freelancer</strong> 
+              para la <strong>Fundación Sembrando Amor (Colombia)</strong>, creando una 
+              aplicación de carga y gestión de datos en Streamlit sobre Google Cloud Platform.
             </p>
             <br />
             <p>
-              Estoy comprometido con el 
-              <span className="font-bold text-teal-500">
-              {" aprendizaje permanente "}
-              </span>
-              ya que el crecimiento personal es un viaje que nunca termina. Mi pasión por la tecnología y mi deseo de siempre empujar los límites de lo posible me motivan día a día. Siempre estoy abierto a nuevas oportunidades y desafíos. 📊
+              Hoy busco seguir desarrollándome como{" "}
+              <span className="font-semibold text-teal-600">
+                Data Analyst con visión estratégica
+              </span>{" "}
+              en entornos donde los datos impulsen decisiones reales de negocio.
             </p>
-            <br  />
           </div>
+
+          {/* Skills */}
           <div className="md:w-1/2">
-            <div className="text-center md:w-full md:text-left">
-              <h1 className="text-2xl font-bold mb-6">Mis habilidades</h1>
-              <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start">
-                {skills.map((item, idx) => (
-                  <p
-                    key={idx}
-                    className="bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold"
-                  >
-                    {item.skill}
-                  </p>
-                ))}
-              </div>
+            <h2 className="text-2xl font-bold mb-6 text-center md:text-left">
+              Habilidades técnicas
+            </h2>
+            <div className="flex flex-wrap justify-center md:justify-start">
+              {skills.map((item, idx) => (
+                <p
+                  key={idx}
+                  className="bg-gray-200 dark:bg-gray-700 px-4 py-2 mr-2 mt-2 text-gray-700 dark:text-gray-200 rounded font-semibold"
+                >
+                  {item.skill}
+                </p>
+              ))}
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center md:w-full">
-          <br />
-          <h1 className="text-center text-2xl font-bold mb-6">
-            ¿Cómo pueden mis habilidades ayudar a tu empresa?
-          </h1>
-          <p className="text-center">
-            Ayudo a empresas a reducir costos y mejorar la eficiencia mediante la automatización de procesos (RPA), el análisis avanzado de datos y la implementación de soluciones de ETL para organizar información dispersa.
-          </p>
-          <br />
-          <p className="text-center">
-            Si necesitas mejorar la eficiencia operativa de tu empresa o transformar tus datos en insights accionables, no dudes en contactarme. Estoy aquí para ayudar.
+
+        <div className="text-center mt-10">
+          <h2 className="text-2xl font-bold mb-4">
+            ¿Cómo puedo ayudarte?
+          </h2>
+          <p className="text-lg text-neutral-700 dark:text-neutral-300 max-w-2xl mx-auto">
+            Ayudo a empresas a mejorar la eficiencia operativa, integrar análisis de datos y automatizar reportes para reducir tiempo y errores.  
+            Mi objetivo es que los datos se conviertan en una verdadera ventaja competitiva.
           </p>
           <a
             href="mailto:fedemarti0107@gmail.com"
-            className="inline-block mt-4 bg-teal-500 text-white font-bold py-2 px-4 rounded hover:bg-teal-600 transition-colors"
+            className="inline-block mt-6 bg-teal-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-teal-700 transition-transform hover:scale-105"
           >
-            Contáctame
+            💬 Hablemos
           </a>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
 export default AboutSection;
+
 
 

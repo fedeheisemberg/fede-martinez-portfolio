@@ -6,107 +6,125 @@ import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
 
 const projects = [
   {
-    name: "Mi repositorio en Tableu",
+    name: "Gestión de Datos — Fundación Sembrando Amor",
     description:
-      "Aquí podrás ver las visualizaciones de datos que he creado.",
-    image: "/tableu.png",
-    github: "#",
-    link: "https://public.tableau.com/app/profile/federico.martinez3300/vizzes",
-  },
-  {
-    name: "Mi canal de Youtube",
-    description:
-      "Aquí encontrarás herramientas relacionadas al mundo de los datos y las finanzas.",
-    image: "/github.png",
-    github: "https://github.com/fedeheisemberg",
-    link: "https://www.youtube.com/@FedeMartinezQuantFinance",
+      "Proyecto freelance desarrollado para una ONG colombiana. Diseñé una aplicación en Streamlit para la carga, visualización y control de datos de beneficiarios, desplegada en Google Cloud Platform. El sistema permitió reducir en un 80% los errores de registro y mejorar la trazabilidad del seguimiento social.",
+    image: "/sembrandoamor.png",
+    github: "#", // Si querés lo enlazamos luego al repo privado o demo
+    link: "https://sembrandoamor.streamlit.app/",
   },
   {
     name: "Optima Consulting & Management LLC",
     description:
-      "Soy cofundador de una empresa dedicada a integrar tecnología avanzada en el sector financiero.",
+      "Cofundador y responsable del área de analítica. Implementé dashboards financieros, automatizaciones RPA y modelos de datos para instituciones y traders. Integramos tecnología avanzada con un enfoque humano para el análisis financiero.",
     image: "/optima.png",
     github: "https://github.com/fedeheisemberg/Optima-Landing-Page",
     link: "https://www.optimafinancials.com/",
   },
   {
     name: "OptionsPro Dashboard",
-    description: "Accede gratis a este dashboard para operadores de opciones financieras.",
-    image: "/dashboard.PNG",  // Asegúrate de que la imagen esté en el directorio adecuado
-    github: "#",  // Puedes agregar el enlace de GitHub si lo tienes
+    description:
+      "Dashboard interactivo en Streamlit para operadores de opciones financieras. Permite visualizar cadenas de opciones, volatilidad implícita y estrategias personalizadas. Utiliza datos de Yahoo Finance y cálculos de modelos de valuación.",
+    image: "/dashboard.PNG",
+    github: "#",
     link: "https://optimaoptionspro.streamlit.app/",
   },
   {
-    name: "Modelo de Machine Learning para Puntaje Crediticio",
-    description: "Accede a este modelo interactivo para la predicción del score crediticio basado en un dataset de aproximadamente 1000 clientes.",
-    image: "/creditscore.PNG",  // Asegúrate de que la imagen esté en el directorio adecuado
-    github: "#",  // Puedes agregar el enlace de GitHub si lo tienes
+    name: "Modelo de Machine Learning — Puntaje Crediticio",
+    description:
+      "Aplicación en Streamlit que predice el score crediticio de clientes utilizando un dataset de 1000 registros. Incluye análisis exploratorio, normalización, feature engineering y métricas de rendimiento del modelo.",
+    image: "/creditscore.PNG",
+    github: "#",
     link: "https://creditscoremodel.streamlit.app/",
   },
   {
-    name: "Mi perfil de Streamlit",
-    description: "Accede a mis aplicaciones y proyectos desplegados en Streamlit.",
-    image: "streamlit.PNG",  // Asegúrate de que la imagen esté en el directorio adecuado
+    name: "Visualizaciones en Tableau",
+    description:
+      "Colección de dashboards públicos en Tableau, con foco en storytelling, finanzas y operaciones empresariales. Demuestra la capacidad de transformar datos en insights visuales y accionables.",
+    image: "/tableu.png",
+    github: "#",
+    link: "https://public.tableau.com/app/profile/federico.martinez3300/vizzes",
+  },
+  {
+    name: "Perfil de Streamlit",
+    description:
+      "Repositorio público de aplicaciones y proyectos desplegados en Streamlit. Incluye visualizaciones, modelos de análisis financiero y herramientas interactivas para educación cuantitativa.",
+    image: "/streamlit.PNG",
     github: "#",
     link: "https://share.streamlit.io/user/fedeheisemberg",
   },
-
+  {
+    name: "Canal de YouTube — Quant Finance",
+    description:
+      "Canal educativo donde enseño programación en Python aplicada a las finanzas y opciones financieras. Enfocado en la divulgación técnica y la formación de futuros analistas cuantitativos.",
+    image: "/github.png",
+    github: "https://github.com/fedeheisemberg",
+    link: "https://www.youtube.com/@FedeMartinezQuantFinance",
+  },
 ];
 
 const ProjectsSection = () => {
   return (
     <section id="projects">
       <h1 className="my-10 text-center font-bold text-4xl">
-        Proyectos
+        Proyectos destacados
         <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></hr>
       </h1>
 
       <div className="flex flex-col space-y-28">
-        {projects.map((project, idx) => {
-          return (
-            <div key={idx}>
-              <SlideUp offset="-300px 0px -300px 0px">
-                <div className="flex flex-col animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
-                  <div className="md:w-1/2">
-                    <Link href={project.link}>
-                      <Image
-                        src={project.image}
-                        alt={project.name}
-                        width={1000}
-                        height={1000}
-                        className="rounded-xl shadow-xl hover:opacity-70"
-                      />
-                    </Link>
-                  </div>
-                  <div className="mt-8 md:w-1/2">
-                    <h1 className="text-4xl font-bold mb-6">{project.name}</h1>
-                    <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
-                      {project.description}
-                    </p>
-                    <div className="flex flex-row align-bottom space-x-4">
+        {projects.map((project, idx) => (
+          <div key={idx}>
+            <SlideUp offset="-300px 0px -300px 0px">
+              <div className="flex flex-col animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
+                {/* Imagen */}
+                <div className="md:w-1/2">
+                  <Link href={project.link} target="_blank">
+                    <Image
+                      src={project.image}
+                      alt={project.name}
+                      width={1000}
+                      height={1000}
+                      className="rounded-xl shadow-xl hover:opacity-80 transition-all duration-300"
+                    />
+                  </Link>
+                </div>
+
+                {/* Descripción */}
+                <div className="mt-8 md:w-1/2">
+                  <h1 className="text-3xl font-bold mb-4 text-teal-600">
+                    {project.name}
+                  </h1>
+                  <p className="text-lg leading-7 mb-6 text-neutral-700 dark:text-neutral-300">
+                    {project.description}
+                  </p>
+                  <div className="flex flex-row space-x-5">
+                    {project.github !== "#" && (
                       <Link href={project.github} target="_blank">
                         <BsGithub
                           size={30}
                           className="hover:-translate-y-1 transition-transform cursor-pointer"
+                          title="Ver código"
                         />
                       </Link>
-                      <Link href={project.link} target="_blank">
-                        <BsArrowUpRightSquare
-                          size={30}
-                          className="hover:-translate-y-1 transition-transform cursor-pointer"
-                        />
-                      </Link>
-                    </div>
+                    )}
+                    <Link href={project.link} target="_blank">
+                      <BsArrowUpRightSquare
+                        size={30}
+                        className="hover:-translate-y-1 transition-transform cursor-pointer"
+                        title="Ver proyecto"
+                      />
+                    </Link>
                   </div>
                 </div>
-              </SlideUp>
-            </div>
-          );
-        })}
+              </div>
+            </SlideUp>
+          </div>
+        ))}
       </div>
     </section>
   );
 };
 
 export default ProjectsSection;
+
 
