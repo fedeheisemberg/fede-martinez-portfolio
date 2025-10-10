@@ -58,7 +58,7 @@ const Footer = () => {
             />
           </a>
           <a
-            href="https://www.youtube.com/@FedeMartinezQuantFinance"
+            href="https://www.youtube.com/@DataFinanceByFede"
             target="_blank"
             rel="noreferrer"
             title="YouTube"
