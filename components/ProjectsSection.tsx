@@ -27,7 +27,7 @@ const projects = [
       "Canal educativo sobre Python y finanzas cuantitativas, con foco en automatización y visualización de datos.",
     image: "/github.png",
     github: "https://github.com/fedeheisemberg",
-    link: "https://www.youtube.com/@FedeMartinezQuantFinance",
+    link: "https://www.youtube.com/@DataFinanceByFede",
   },
   {
     name: "Optima Consulting & Management LLC (2023–2025)",
