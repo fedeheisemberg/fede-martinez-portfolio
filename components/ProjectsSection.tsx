@@ -22,6 +22,14 @@ const projects = [
     link: "https://optimaoptionspro.streamlit.app/",
   },
   {
+    name: "Canal de YouTube — Data Finance",
+    description:
+      "Canal educativo sobre Python y finanzas cuantitativas, con foco en automatización y visualización de datos.",
+    image: "/github.png",
+    github: "https://github.com/fedeheisemberg",
+    link: "https://www.youtube.com/@FedeMartinezQuantFinance",
+  },
+  {
     name: "Optima Consulting & Management LLC (2023–2025)",
     description:
       "Cofundador y analista principal. Creación de dashboards financieros, automatizaciones RPA y modelos de datos para instituciones y operadores.",
@@ -53,14 +61,7 @@ const projects = [
     github: "#",
     link: "https://share.streamlit.io/user/fedeheisemberg",
   },
-  {
-    name: "Canal de YouTube — Data Finance",
-    description:
-      "Canal educativo sobre Python y finanzas cuantitativas, con foco en automatización y visualización de datos.",
-    image: "/github.png",
-    github: "https://github.com/fedeheisemberg",
-    link: "https://www.youtube.com/@FedeMartinezQuantFinance",
-  },
+
 ];
 
 
