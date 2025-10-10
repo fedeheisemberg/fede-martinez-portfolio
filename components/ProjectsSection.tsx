@@ -8,18 +8,10 @@ const projects = [
   {
     name: "Gestión de Datos — Fundación Sembrando Amor",
     description:
-      "Proyecto freelance desarrollado para una ONG colombiana. Diseñé una aplicación en Streamlit para la carga, visualización y control de datos de beneficiarios, desplegada en Google Cloud Platform. El sistema permitió reducir en un 80% los errores de registro y mejorar la trazabilidad del seguimiento social.",
-    image: "/sembrandoamor.png",
-    github: "#", // Si querés lo enlazamos luego al repo privado o demo
-    link: "https://sembrandoamor.streamlit.app/",
-  },
-  {
-    name: "Optima Consulting & Management LLC",
-    description:
-      "Cofundador y responsable del área de analítica. Implementé dashboards financieros, automatizaciones RPA y modelos de datos para instituciones y traders. Integramos tecnología avanzada con un enfoque humano para el análisis financiero.",
-    image: "/optima.png",
-    github: "https://github.com/fedeheisemberg/Optima-Landing-Page",
-    link: "https://www.optimafinancials.com/",
+      "Proyecto freelance desarrollado para una ONG colombiana. Diseñé una aplicación en Streamlit para la carga, visualización y control de datos de beneficiarios, desplegada en Google Cloud Platform. El sistema permitió reducir en un 80% los errores de registro y mejorar la trazabilidad del seguimiento social. (Proyecto bajo acuerdo de confidencialidad, sin acceso público a código o demo.)",
+    image: "/sembrando amor.png",
+    github: null,
+    link: null,
   },
   {
     name: "OptionsPro Dashboard",
@@ -28,6 +20,14 @@ const projects = [
     image: "/dashboard.PNG",
     github: "#",
     link: "https://optimaoptionspro.streamlit.app/",
+  },
+  {
+    name: "Optima Consulting & Management LLC (2023–2025)",
+    description:
+      "Cofundador y responsable del área de analítica. Implementé dashboards financieros, automatizaciones RPA y modelos de datos para instituciones y traders. Integramos tecnología avanzada con un enfoque humano para el análisis financiero.",
+    image: "/optima.png",
+    github: "https://github.com/fedeheisemberg/Optima-Landing-Page",
+    link: "https://www.optimafinancials.com/",
   },
   {
     name: "Modelo de Machine Learning — Puntaje Crediticio",
@@ -54,9 +54,9 @@ const projects = [
     link: "https://share.streamlit.io/user/fedeheisemberg",
   },
   {
-    name: "Canal de YouTube — Quant Finance",
+    name: "Canal de YouTube — Data Finance",
     description:
-      "Canal educativo donde enseño programación en Python aplicada a las finanzas y opciones financieras. Enfocado en la divulgación técnica y la formación de futuros analistas cuantitativos.",
+      "Canal educativo donde enseño aplicaciones financieras en Python. Enfocado en la divulgación técnica.",
     image: "/github.png",
     github: "https://github.com/fedeheisemberg",
     link: "https://www.youtube.com/@FedeMartinezQuantFinance",
@@ -68,7 +68,7 @@ const ProjectsSection = () => {
     <section id="projects">
       <h1 className="my-10 text-center font-bold text-4xl">
         Proyectos destacados
-        <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></hr>
+        <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded" />
       </h1>
 
       <div className="flex flex-col space-y-28">
@@ -76,17 +76,28 @@ const ProjectsSection = () => {
           <div key={idx}>
             <SlideUp offset="-300px 0px -300px 0px">
               <div className="flex flex-col animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
+                
                 {/* Imagen */}
                 <div className="md:w-1/2">
-                  <Link href={project.link} target="_blank">
+                  {project.link ? (
+                    <Link href={project.link} target="_blank" rel="noopener noreferrer">
+                      <Image
+                        src={project.image}
+                        alt={project.name}
+                        width={1000}
+                        height={1000}
+                        className="rounded-xl shadow-xl hover:opacity-80 transition-all duration-300"
+                      />
+                    </Link>
+                  ) : (
                     <Image
                       src={project.image}
                       alt={project.name}
                       width={1000}
                       height={1000}
-                      className="rounded-xl shadow-xl hover:opacity-80 transition-all duration-300"
+                      className="rounded-xl shadow-xl opacity-90"
                     />
-                  </Link>
+                  )}
                 </div>
 
                 {/* Descripción */}
@@ -97,24 +108,32 @@ const ProjectsSection = () => {
                   <p className="text-lg leading-7 mb-6 text-neutral-700 dark:text-neutral-300">
                     {project.description}
                   </p>
-                  <div className="flex flex-row space-x-5">
-                    {project.github !== "#" && (
-                      <Link href={project.github} target="_blank">
-                        <BsGithub
-                          size={30}
-                          className="hover:-translate-y-1 transition-transform cursor-pointer"
-                          title="Ver código"
-                        />
-                      </Link>
-                    )}
-                    <Link href={project.link} target="_blank">
-                      <BsArrowUpRightSquare
-                        size={30}
-                        className="hover:-translate-y-1 transition-transform cursor-pointer"
-                        title="Ver proyecto"
-                      />
-                    </Link>
-                  </div>
+                  {project.github || project.link ? (
+                    <div className="flex flex-row space-x-5">
+                      {project.github && project.github !== "#" && (
+                        <Link href={project.github} target="_blank" rel="noopener noreferrer">
+                          <BsGithub
+                            size={30}
+                            className="hover:-translate-y-1 transition-transform cursor-pointer"
+                            title="Ver código"
+                          />
+                        </Link>
+                      )}
+                      {project.link && (
+                        <Link href={project.link} target="_blank" rel="noopener noreferrer">
+                          <BsArrowUpRightSquare
+                            size={30}
+                            className="hover:-translate-y-1 transition-transform cursor-pointer"
+                            title="Ver proyecto"
+                          />
+                        </Link>
+                      )}
+                    </div>
+                  ) : (
+                    <span className="text-sm italic text-neutral-500 dark:text-neutral-400">
+                      🔒 Proyecto confidencial
+                    </span>
+                  )}
                 </div>
               </div>
             </SlideUp>
@@ -126,5 +145,6 @@ const ProjectsSection = () => {
 };
 
 export default ProjectsSection;
+
 
 
