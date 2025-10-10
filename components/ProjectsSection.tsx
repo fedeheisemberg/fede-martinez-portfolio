@@ -8,7 +8,7 @@ const projects = [
   {
     name: "Gestión de Datos — Fundación Sembrando Amor",
     description:
-      "Proyecto freelance desarrollado para una ONG colombiana. Diseñé una aplicación en Streamlit para la carga, visualización y control de datos de beneficiarios, desplegada en Google Cloud Platform. El sistema permitió reducir en un 80% los errores de registro y mejorar la trazabilidad del seguimiento social. (Proyecto bajo acuerdo de confidencialidad, sin acceso público a código o demo.)",
+      "Proyecto freelance para ONG colombiana. Desarrollé una app en Streamlit y GCP para digitalizar registros de beneficiarios, mejorando trazabilidad y reduciendo errores en un 80%. 🔒 Proyecto confidencial.",
     image: "/sembrando amor.png",
     github: null,
     link: null,
@@ -16,7 +16,7 @@ const projects = [
   {
     name: "OptionsPro Dashboard",
     description:
-      "Dashboard interactivo en Streamlit para operadores de opciones financieras. Permite visualizar cadenas de opciones, volatilidad implícita y estrategias personalizadas. Utiliza datos de Yahoo Finance y cálculos de modelos de valuación.",
+      "Dashboard en Streamlit para traders de opciones. Visualiza cadenas, volatilidad y estrategias basadas en datos de Yahoo Finance.",
     image: "/dashboard.PNG",
     github: "#",
     link: "https://optimaoptionspro.streamlit.app/",
@@ -24,23 +24,23 @@ const projects = [
   {
     name: "Optima Consulting & Management LLC (2023–2025)",
     description:
-      "Cofundador y responsable del área de analítica. Implementé dashboards financieros, automatizaciones RPA y modelos de datos para instituciones y traders. Integramos tecnología avanzada con un enfoque humano para el análisis financiero.",
+      "Cofundador y analista principal. Creación de dashboards financieros, automatizaciones RPA y modelos de datos para instituciones y operadores.",
     image: "/optima.png",
     github: "https://github.com/fedeheisemberg/Optima-Landing-Page",
     link: "https://www.optimafinancials.com/",
   },
   {
-    name: "Modelo de Machine Learning — Puntaje Crediticio",
+    name: "Modelo de Machine Learning — Score Crediticio",
     description:
-      "Aplicación en Streamlit que predice el score crediticio de clientes utilizando un dataset de 1000 registros. Incluye análisis exploratorio, normalización, feature engineering y métricas de rendimiento del modelo.",
+      "App en Streamlit que predice el score crediticio mediante Decision Trees y Random Forest. Dataset de 1.000 clientes.",
     image: "/creditscore.PNG",
     github: "#",
     link: "https://creditscoremodel.streamlit.app/",
   },
   {
-    name: "Visualizaciones en Tableau",
+    name: "Dashboards en Tableau",
     description:
-      "Colección de dashboards públicos en Tableau, con foco en storytelling, finanzas y operaciones empresariales. Demuestra la capacidad de transformar datos en insights visuales y accionables.",
+      "Visualizaciones de ventas y RRHH con enfoque en storytelling y análisis de KPIs.",
     image: "/tableu.png",
     github: "#",
     link: "https://public.tableau.com/app/profile/federico.martinez3300/vizzes",
@@ -48,7 +48,7 @@ const projects = [
   {
     name: "Perfil de Streamlit",
     description:
-      "Repositorio público de aplicaciones y proyectos desplegados en Streamlit. Incluye visualizaciones, modelos de análisis financiero y herramientas interactivas para educación cuantitativa.",
+      "Colección de aplicaciones interactivas en Streamlit sobre finanzas y análisis de datos.",
     image: "/streamlit.PNG",
     github: "#",
     link: "https://share.streamlit.io/user/fedeheisemberg",
@@ -56,12 +56,13 @@ const projects = [
   {
     name: "Canal de YouTube — Data Finance",
     description:
-      "Canal educativo donde enseño aplicaciones financieras en Python. Enfocado en la divulgación técnica.",
+      "Canal educativo sobre Python y finanzas cuantitativas, con foco en automatización y visualización de datos.",
     image: "/github.png",
     github: "https://github.com/fedeheisemberg",
     link: "https://www.youtube.com/@FedeMartinezQuantFinance",
   },
 ];
+
 
 const ProjectsSection = () => {
   return (

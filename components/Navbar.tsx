@@ -43,12 +43,13 @@ export default function Navbar() {
         </div>
 
         {/* Nav links */}
-        <div
-          className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
-            navbar ? "block" : "hidden"
-          }`}
-        >
-          <div className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+          <div
+            className={`flex-1 justify-self-end pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
+              navbar ? "block" : "hidden"
+            }`}
+          >
+            <div className="items-center justify-end space-y-8 md:flex md:space-x-8 md:space-y-0">
+
             {NAV_ITEMS.map((item, idx) =>
               item.page.startsWith("http") ? (
                 <a
