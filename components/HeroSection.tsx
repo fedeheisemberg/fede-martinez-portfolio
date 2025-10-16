@@ -31,7 +31,7 @@ const HeroSection = () => {
             Ayudo a empresas a tomar mejores decisiones mediante{" "}
             <span className="font-semibold">automatización de procesos, visualización de datos</span> y{" "}
             <span className="font-semibold">análisis financiero.</span>  
-            Mi enfoque combina el mundo de los datos con la aplicabilidad real en los negocios.
+             Mi enfoque combina el mundo de los datos con la aplicabilidad real en los negocios.
           </p>
 
           <div className="flex justify-center md:justify-start">

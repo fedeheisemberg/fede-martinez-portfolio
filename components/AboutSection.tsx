@@ -38,7 +38,7 @@ const AboutSection = () => {
             <p>
               En 2023 cofundé <strong>Optima Consulting & Management LLC</strong>, 
               donde diseñé dashboards y automatizaciones que mejoraron la eficiencia de procesos
-              y redujeron tiempos de análisis. En 2025 trabajé como <strong>freelancer</strong> 
+              y redujeron tiempos de análisis. En 2025 trabajé como <strong>freelancer </strong> 
               para la <strong>Fundación Sembrando Amor (Colombia)</strong>, creando una 
               aplicación de carga y gestión de datos en Streamlit sobre Google Cloud Platform.
             </p>
