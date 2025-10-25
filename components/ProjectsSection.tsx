@@ -32,7 +32,7 @@ const projects = [
   {
     name: "Optima Consulting & Management LLC (2023–2025)",
     description:
-      "Cofundador y analista principal. Creación de dashboards financieros, automatizaciones RPA y modelos de datos para instituciones y operadores.",
+      "Cofundador y analista. Creación de dashboards financieros, automatizaciones RPA y modelos de datos para instituciones y operadores.",
     image: "/optima.png",
     github: "https://github.com/fedeheisemberg/Optima-Landing-Page",
     link: "https://www.optimafinancials.com/",
