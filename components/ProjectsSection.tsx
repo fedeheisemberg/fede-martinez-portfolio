@@ -46,24 +46,22 @@ const projects = [
     link: "https://creditscoremodel.streamlit.app/",
   },
   {
-    name: "Dashboards en Tableau",
+    name: "Machine Learning — Predicción de abandono de empleados",
     description:
-      "Visualizaciones de ventas y RRHH con enfoque en storytelling y análisis de KPIs.",
-    image: "/tableu.png",
+      "Modelo predictivo desarrollado en Python y visualizado en Tableau Public. Permite analizar factores asociados a la rotación del personal y predecir el abandono laboral con base en variables clave de RRHH.",
+    image: "/ml-hr.png",
     github: "#",
-    link: "https://public.tableau.com/app/profile/federico.martinez3300/vizzes",
+    link: "https://public.tableau.com/app/profile/federico.martinez3300/viz/DashboardML-HR/Dashboard1",
   },
   {
-    name: "Perfil de Streamlit",
+    name: "Dashboard — Base de datos Classic Models",
     description:
-      "Colección de aplicaciones interactivas en Streamlit sobre finanzas y análisis de datos.",
-    image: "/streamlit.PNG",
+      "Dashboard ejecutivo en Tableau con métricas de ventas globales, márgenes, y desempeño por línea de producto y región. Inspirado en la base de datos de ejemplo de MySQL.",
+    image: "/classicmodels.png",
     github: "#",
-    link: "https://share.streamlit.io/user/fedeheisemberg",
+    link: "https://public.tableau.com/app/profile/federico.martinez3300/viz/ClassicModelsSalesDashboard/ResumenEjecutivo",
   },
-
 ];
-
 
 const ProjectsSection = () => {
   return (
