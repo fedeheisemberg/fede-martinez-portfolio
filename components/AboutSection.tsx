@@ -4,7 +4,6 @@ const skills = [
   { skill: "Python" },
   { skill: "SQL" },
   { skill: "Tableau" },
-  { skill: "Power BI" },
   { skill: "Apache Airflow" },
   { skill: "Apache Spark" },
   { skill: "Google Cloud Platform" },
@@ -38,7 +37,7 @@ const AboutSection = () => {
             <p>
               En 2023 cofundé <strong>Optima Consulting & Management LLC</strong>, 
               donde diseñé dashboards y automatizaciones que mejoraron la eficiencia de procesos
-              y redujeron tiempos de análisis. En 2025 trabajé como <strong>freelancer </strong> 
+              y redujeron tiempos de análisis. En 2025 trabajé como <strong>independiente </strong> 
               para la <strong>Fundación Sembrando Amor (Colombia)</strong>, creando una 
               aplicación de carga y gestión de datos en Streamlit sobre Google Cloud Platform.
             </p>
@@ -48,7 +47,7 @@ const AboutSection = () => {
               <span className="font-semibold text-teal-600">
                 Data Analyst con visión estratégica
               </span>{" "}
-              en entornos donde los datos impulsen decisiones reales de negocio.
+              en entornos donde los datos se conviertan en palancas para decisiones que generen impacto real en los resultados del negocio.
             </p>
           </div>
 

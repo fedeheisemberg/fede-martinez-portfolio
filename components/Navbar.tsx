@@ -30,7 +30,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between py-3 md:py-5 md:block">
           <Link to="home" smooth={true} duration={500}>
             <h2 className="text-3xl sm:text-4xl font-bold tracking-tight cursor-pointer text-teal-600 dark:text-teal-400">
-              Fede Martinez
+              Federico Martinez
             </h2>
           </Link>
           {/* Mobile menu button */}

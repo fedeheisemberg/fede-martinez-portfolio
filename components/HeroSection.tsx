@@ -27,7 +27,7 @@ const HeroSection = () => {
             <span className="font-semibold text-teal-600">
               Analista de Datos
             </span>{" "}
-            con base en San Juan, Argentina.  
+            con base en Argentina.  
             Ayudo a empresas a tomar mejores decisiones mediante{" "}
             <span className="font-semibold">automatización de procesos, visualización de datos</span> y{" "}
             <span className="font-semibold">análisis financiero.</span>  
