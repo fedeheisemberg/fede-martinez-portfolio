@@ -6,6 +6,22 @@ import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
 
 const projects = [
   {
+    name: "Modelo de Scoring para seleccionar acciones en una cartera de inversión (en proceso)",
+    description:
+      "Modelo cuantitativo para evaluar y clasificar acciones según métricas fundamentales, técnicas y de riesgo. Publicación inicial en LinkedIn.",
+    image: "/scoringmodel.png",
+    github: null,
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7355216612196519936",
+  },
+  {
+    name: "📊 Advanced Portfolio Optimizer",
+    description:
+      "Esta aplicación te permite simular y optimizar portafolios de inversión utilizando la teoría moderna de portafolios. Incluye costos de transacción, slippage y métricas avanzadas de riesgo. Conceptos: Sharpe Ratio, VaR, CVaR, Drawdown.",
+    image: "/portfolioopt.png",
+    github: null,
+    link: "https://portfoliopt.streamlit.app/",
+  },
+  {
     name: "Gestión de Datos — Fundación Sembrando Amor",
     description:
       "Proyecto freelance para ONG colombiana. Desarrollé una app en Streamlit y GCP para digitalizar registros de beneficiarios, mejorando trazabilidad y reduciendo errores en un 80%. 🔒 Proyecto confidencial.",
@@ -48,7 +64,7 @@ const projects = [
   {
     name: "Machine Learning — Predicción de abandono de empleados",
     description:
-      "Modelo predictivo desarrollado en Python y visualizado en Tableau Public. Permite analizar factores asociados a la rotación del personal y predecir el abandono laboral con base en variables clave de RRHH.",
+      "Modelo predictivo desarrollado en Python y visualizado en Tableau Public. Analiza factores asociados a la rotación del personal.",
     image: "/ml-hr.png",
     github: "#",
     link: "https://public.tableau.com/app/profile/federico.martinez3300/viz/DashboardML-HR/Dashboard1",
@@ -56,7 +72,7 @@ const projects = [
   {
     name: "Dashboard — Base de datos Classic Models",
     description:
-      "Dashboard ejecutivo en Tableau con métricas de ventas globales, márgenes, y desempeño por línea de producto y región. Inspirado en la base de datos de ejemplo de MySQL.",
+      "Dashboard ejecutivo en Tableau con métricas de ventas globales, márgenes y desempeño por línea de producto y región.",
     image: "/classicmodels.png",
     github: "#",
     link: "https://public.tableau.com/app/profile/federico.martinez3300/viz/ClassicModelsSalesDashboard/ResumenEjecutivo",
@@ -145,6 +161,7 @@ const ProjectsSection = () => {
 };
 
 export default ProjectsSection;
+
 
 
 
