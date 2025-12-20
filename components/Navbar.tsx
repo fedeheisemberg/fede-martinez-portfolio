@@ -1,7 +1,7 @@
 "use client"
+
 import React, { useState } from "react"
 import { Link } from "react-scroll/modules"
-import { usePathname } from "next/navigation"
 import { useTheme } from "next-themes"
 import { RiMoonFill, RiSunLine } from "react-icons/ri"
 import { IoMdMenu, IoMdClose } from "react-icons/io"
@@ -11,7 +11,7 @@ interface NavItem {
   page: string
 }
 
-const NAV_ITEMS: Array<NavItem> = [
+const NAV_ITEMS: NavItem[] = [
   { label: "Inicio", page: "home" },
   { label: "Sobre mí", page: "about" },
   { label: "Proyectos", page: "projects" },
@@ -21,35 +21,22 @@ const NAV_ITEMS: Array<NavItem> = [
 export default function Navbar() {
   const { systemTheme, theme, setTheme } = useTheme()
   const currentTheme = theme === "system" ? systemTheme : theme
-  const [navbar, setNavbar] = useState(false)
+  const [navbarOpen, setNavbarOpen] = useState(false)
 
   return (
-    <header className="w-full mx-auto px-4 sm:px-20 fixed top-0 z-50 shadow bg-white dark:bg-stone-900 dark:border-b dark:border-stone-600">
-      <div className="justify-between md:items-center md:flex">
-        {/* Nombre */}
-        <div className="flex items-center justify-between py-3 md:py-5 md:block">
-          <Link to="home" smooth={true} duration={500}>
-            <h2 className="text-3xl sm:text-4xl font-bold tracking-tight cursor-pointer text-teal-600 dark:text-teal-400">
+    <header className="fixed top-0 z-50 w-full bg-white dark:bg-stone-900 shadow-md dark:border-b dark:border-stone-700">
+      <div className="mx-auto max-w-7xl px-4 sm:px-8">
+        <div className="flex items-center justify-between py-4">
+
+          {/* Logo / Nombre */}
+          <Link to="home" smooth duration={500}>
+            <h1 className="text-2xl sm:text-3xl font-bold cursor-pointer text-teal-600 dark:text-teal-400">
               Federico Martinez
-            </h2>
+            </h1>
           </Link>
-          {/* Mobile menu button */}
-          <button
-            className="md:hidden p-2 text-gray-700 dark:text-gray-100 rounded-md focus:outline-none"
-            onClick={() => setNavbar(!navbar)}
-          >
-            {navbar ? <IoMdClose size={30} /> : <IoMdMenu size={30} />}
-          </button>
-        </div>
 
-        {/* Nav links */}
-          <div
-            className={`flex-1 justify-self-end pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
-              navbar ? "block" : "hidden"
-            }`}
-          >
-            <div className="items-center justify-end space-y-8 md:flex md:space-x-8 md:space-y-0">
-
+          {/* Desktop nav */}
+          <nav className="hidden md:flex items-center space-x-8">
             {NAV_ITEMS.map((item, idx) =>
               item.page.startsWith("http") ? (
                 <a
@@ -57,7 +44,7 @@ export default function Navbar() {
                   href={item.page}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-neutral-900 hover:text-teal-600 dark:text-neutral-100"
+                  className="text-neutral-800 dark:text-neutral-100 hover:text-teal-600"
                 >
                   {item.label}
                 </a>
@@ -65,34 +52,93 @@ export default function Navbar() {
                 <Link
                   key={idx}
                   to={item.page}
-                  smooth={true}
+                  smooth
                   offset={-100}
                   duration={500}
-                  className="cursor-pointer text-neutral-900 hover:text-teal-600 dark:text-neutral-100"
-                  onClick={() => setNavbar(false)}
+                  className="cursor-pointer text-neutral-800 dark:text-neutral-100 hover:text-teal-600"
                 >
                   {item.label}
                 </Link>
               )
             )}
-            {/* Tema */}
+
+            {/* Theme toggle desktop */}
             {currentTheme === "dark" ? (
               <button
                 onClick={() => setTheme("light")}
                 className="bg-slate-100 p-2 rounded-xl"
               >
-                <RiSunLine size={22} color="black" />
+                <RiSunLine size={20} color="black" />
               </button>
             ) : (
               <button
                 onClick={() => setTheme("dark")}
                 className="bg-slate-100 p-2 rounded-xl"
               >
-                <RiMoonFill size={22} />
+                <RiMoonFill size={20} />
               </button>
             )}
-          </div>
+          </nav>
+
+          {/* Mobile menu button */}
+          <button
+            className="md:hidden text-neutral-800 dark:text-neutral-100"
+            onClick={() => setNavbarOpen(!navbarOpen)}
+          >
+            {navbarOpen ? <IoMdClose size={28} /> : <IoMdMenu size={28} />}
+          </button>
         </div>
+
+        {/* Mobile menu */}
+        {navbarOpen && (
+          <div className="md:hidden pb-6">
+            <div className="flex flex-col space-y-6 rounded-xl bg-white dark:bg-stone-900 p-6 shadow-lg">
+              {NAV_ITEMS.map((item, idx) =>
+                item.page.startsWith("http") ? (
+                  <a
+                    key={idx}
+                    href={item.page}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-neutral-800 dark:text-neutral-100 hover:text-teal-600"
+                    onClick={() => setNavbarOpen(false)}
+                  >
+                    {item.label}
+                  </a>
+                ) : (
+                  <Link
+                    key={idx}
+                    to={item.page}
+                    smooth
+                    offset={-100}
+                    duration={500}
+                    className="cursor-pointer text-neutral-800 dark:text-neutral-100 hover:text-teal-600"
+                    onClick={() => setNavbarOpen(false)}
+                  >
+                    {item.label}
+                  </Link>
+                )
+              )}
+
+              {/* Theme toggle mobile */}
+              {currentTheme === "dark" ? (
+                <button
+                  onClick={() => setTheme("light")}
+                  className="bg-slate-100 p-2 rounded-xl w-fit"
+                >
+                  <RiSunLine size={20} color="black" />
+                </button>
+              ) : (
+                <button
+                  onClick={() => setTheme("dark")}
+                  className="bg-slate-100 p-2 rounded-xl w-fit"
+                >
+                  <RiMoonFill size={20} />
+                </button>
+              )}
+            </div>
+          </div>
+        )}
       </div>
     </header>
   )

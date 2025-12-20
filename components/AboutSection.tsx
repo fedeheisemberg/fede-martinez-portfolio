@@ -28,27 +28,48 @@ const AboutSection = () => {
               Un poco sobre mi camino 🚀
             </h2>
             <p>
-              Estudié <strong>Administración de Empresas</strong>.  
-              Mi pasión por los datos surgió al ver cómo podían transformar la{" "}
-              <strong>toma de decisiones financieras</strong> y optimizar la{" "}
-              <strong>gestión empresarial</strong>.
+              Soy estudiante avanzado de <strong>Administración de Empresas</strong>, con una fuerte
+              orientación a <strong>datos, automatización y análisis financiero</strong>.  
+              Mi recorrido combina el entendimiento del negocio con la capacidad técnica para
+              transformar datos en decisiones accionables.
             </p>
+
             <br />
+
             <p>
-              En 2023 cofundé <strong>Optima Consulting & Management LLC</strong>, 
-              donde diseñé dashboards y automatizaciones que mejoraron la eficiencia de procesos
-              y redujeron tiempos de análisis. En 2025 trabajé como <strong>independiente </strong> 
-              para la <strong>Fundación Sembrando Amor (Colombia)</strong>, creando una 
-              aplicación de carga y gestión de datos en Streamlit sobre Google Cloud Platform.
+              En 2023 cofundé <strong>Optima Consulting & Management LLC</strong>, donde trabajé en el diseño de
+              <strong> dashboards ejecutivos, automatizaciones de procesos (RPA)</strong> y modelos de datos
+              orientados a mejorar la eficiencia operativa y la calidad de la información para la toma
+              de decisiones.
             </p>
+
             <br />
+
             <p>
-              Hoy busco seguir desarrollándome como{" "}
+              Durante 2025 trabajé como <strong>analista independiente</strong> para la
+              <strong> Fundación Sembrando Amor (Colombia)</strong>, desarrollando una aplicación en
+              <strong> Streamlit sobre Google Cloud Platform</strong> para la carga, validación y gestión de datos,
+              reduciendo errores manuales y mejorando la trazabilidad de la información.
+            </p>
+
+            <br />
+
+            <p>
+              Además, desarrollo proyectos propios enfocados en <strong>finanzas cuantitativas</strong>,
+              optimización de portafolios, modelos de scoring, machine learning aplicado a negocios y
+              visualización avanzada de datos con Python, SQL y Tableau.
+            </p>
+
+            <br />
+
+            <p>
+              Hoy busco consolidarme como{" "}
               <span className="font-semibold text-teal-600">
-                Data Analyst con visión estratégica
-              </span>{" "}
-              en entornos donde los datos se conviertan en palancas para decisiones que generen impacto real en los resultados del negocio.
+                Data Analyst con visión estratégica y financiera
+              </span>, aportando valor en organizaciones que necesiten convertir datos complejos en
+              <strong> decisiones claras, medibles y con impacto real</strong>.
             </p>
+
           </div>
 
           {/* Skills */}
