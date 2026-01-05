@@ -21,14 +21,14 @@ const projects = [
     github: null,
     link: "https://portfoliopt.streamlit.app/",
   },
-  {
-    name: "Gestión de Datos — Fundación Sembrando Amor",
-    description:
-      "Proyecto freelance para ONG colombiana. Desarrollé una app en Streamlit y GCP para digitalizar registros de beneficiarios, mejorando trazabilidad y reduciendo errores en un 80%. 🔒 Proyecto confidencial.",
-    image: "/sembrando amor.png",
-    github: null,
-    link: null,
-  },
+//  {
+//    name: "Gestión de Datos — Fundación Sembrando Amor",
+//    description:
+//      "Proyecto freelance para ONG colombiana. Desarrollé una app en Streamlit y GCP para digitalizar registros de beneficiarios, mejorando trazabilidad y reduciendo errores en un 80%. 🔒 Proyecto confidencial.",
+//    image: "/sembrando amor.png",
+//    github: null,
+//    link: null,
+//  },
   {
     name: "OptionsPro Dashboard",
     description:

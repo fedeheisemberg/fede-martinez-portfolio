@@ -46,9 +46,7 @@ const AboutSection = () => {
             <br />
 
             <p>
-              Durante 2025 trabajé como <strong>analista independiente</strong> para la
-              <strong> Fundación Sembrando Amor (Colombia)</strong>, desarrollando una aplicación en
-              <strong> Streamlit sobre Google Cloud Platform</strong> para la carga, validación y gestión de datos,
+              Actualmente trabajo como <strong>analista independiente</strong> desarrollando soluciones para la carga, validación y gestión de datos, así como su análisis e interpretación,
               reduciendo errores manuales y mejorando la trazabilidad de la información.
             </p>
 
