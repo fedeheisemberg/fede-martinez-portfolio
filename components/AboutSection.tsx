@@ -1,16 +1,25 @@
 import React from "react";
 
 const skills = [
+  // Core & Development
   { skill: "Python" },
   { skill: "SQL" },
-  { skill: "Tableau" },
-  { skill: "Apache Airflow" },
-  { skill: "Apache Spark" },
-  { skill: "Google Cloud Platform" },
-  { skill: "Excel Avanzado" },
-  { skill: "ETL & Data Pipelines" },
-  { skill: "Automatización (RPA)" },
   { skill: "Git & GitHub" },
+
+  // Data Engineering & Big Data
+  { skill: "Databricks" },
+  { skill: "Apache Spark" },
+  { skill: "Apache Airflow" },
+  { skill: "ETL & Data Pipelines" },
+
+  // Cloud Infrastructure
+  { skill: "AWS" },
+  { skill: "Google Cloud Platform" },
+
+  // Analytics & Automation
+  { skill: "Tableau" },
+  { skill: "Excel Avanzado" },
+  { skill: "Automatización (RPA)" },
 ]
 
 const AboutSection = () => {
