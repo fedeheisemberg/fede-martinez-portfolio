@@ -21,14 +21,14 @@ const projects = [
     github: null,
     link: "https://portfoliopt.streamlit.app/",
   },
-//  {
-//    name: "Gestión de Datos — Fundación Sembrando Amor",
-//    description:
-//      "Proyecto freelance para ONG colombiana. Desarrollé una app en Streamlit y GCP para digitalizar registros de beneficiarios, mejorando trazabilidad y reduciendo errores en un 80%. 🔒 Proyecto confidencial.",
-//    image: "/sembrando amor.png",
-//    github: null,
-//    link: null,
-//  },
+ {
+ name: "Databricks Emissions Dashboard",
+  description:
+    "Proyecto inicial usando por primera vez Databricks..",
+   image: "/databricks1.png",
+   github: null,
+   link: 'https://dbc-e78805c9-ae33.cloud.databricks.com/dashboardsv3/01f0ecc1bc76145598358dd27bb13519/published?o=1775234182689834'
+ },
   {
     name: "OptionsPro Dashboard",
     description:
