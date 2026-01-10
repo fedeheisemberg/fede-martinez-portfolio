@@ -36,7 +36,7 @@ const Footer = () => {
         {/* --- Redes --- */}
         <div className="flex flex-row space-x-4">
           <a
-            href="https://github.com/fedeheisemberg"
+            href="https://github.com/fedemartinez5425"
             target="_blank"
             rel="noreferrer"
             title="GitHub"

@@ -15,7 +15,7 @@ const NAV_ITEMS: NavItem[] = [
   { label: "Inicio", page: "home" },
   { label: "Sobre mí", page: "about" },
   { label: "Proyectos", page: "projects" },
-  { label: "Mi CV", page: "https://fedeheisemberg.github.io/federico-cv/" },
+  { label: "Mi CV", page: "https://fedemartinez5425.github.io/federico-cv/" },
 ]
 
 export default function Navbar() {

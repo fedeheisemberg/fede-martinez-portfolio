@@ -42,7 +42,7 @@ const projects = [
     description:
       "Canal educativo sobre Python y finanzas cuantitativas, con foco en automatización y visualización de datos.",
     image: "/github.png",
-    github: "https://github.com/fedeheisemberg",
+    github: "https://github.com/fedemartinez5425",
     link: "https://www.youtube.com/@DataFinanceByFede",
   },
   {
