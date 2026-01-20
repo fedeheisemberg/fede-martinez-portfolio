@@ -5,6 +5,15 @@ import SlideUp from "./SlideUp";
 import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
 
 const projects = [
+  
+  {
+    name: "Modelo de Scoring para seleccionar acciones en una cartera de inversión (en proceso)",
+    description:
+      "Modelo cuantitativo para evaluar y clasificar acciones según métricas fundamentales, técnicas y de riesgo. Publicación inicial en LinkedIn.",
+    image: "/scoringmodel.png",
+    github: null,
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7355216612196519936",
+  },
   {
   name: "📈 Análisis Estadístico de ETFs & Pruebas de Hipótesis",
   description:
@@ -24,14 +33,6 @@ const projects = [
 },
 
   {
-    name: "Modelo de Scoring para seleccionar acciones en una cartera de inversión (en proceso)",
-    description:
-      "Modelo cuantitativo para evaluar y clasificar acciones según métricas fundamentales, técnicas y de riesgo. Publicación inicial en LinkedIn.",
-    image: "/scoringmodel.png",
-    github: null,
-    link: "https://www.linkedin.com/feed/update/urn:li:activity:7355216612196519936",
-  },
-  {
     name: "📊 Advanced Portfolio Optimizer",
     description:
       "Esta aplicación te permite simular y optimizar portafolios de inversión utilizando la teoría moderna de portafolios. Incluye costos de transacción, slippage y métricas avanzadas de riesgo. Conceptos: Sharpe Ratio, VaR, CVaR, Drawdown.",
@@ -42,7 +43,7 @@ const projects = [
  {
  name: "Databricks Emissions Dashboard",
   description:
-    "Proyecto inicial usando por primera vez Databricks..",
+    "Dashboard para monitorear y analizar emisiones de carbono de distintas fuentes. Proyecto inicial usando por primera vez Databricks.",
    image: "/databricks1.png",
    github: null,
    link: 'https://dbc-e78805c9-ae33.cloud.databricks.com/dashboardsv3/01f0ecc1bc76145598358dd27bb13519/published?o=1775234182689834'
