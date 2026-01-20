@@ -9,7 +9,7 @@ const projects = [
   name: "📈 Análisis Estadístico de ETFs & Pruebas de Hipótesis",
   description:
     "Estudio cuantitativo sobre ETFs utilizando análisis estadístico, optimización de portafolios y pruebas de hipótesis. Incluye comparación Equity vs Bonds, Markowitz vs 60/40, análisis de correlaciones, PCA, HRP, VaR y CVaR, con conclusiones prácticas para distintos perfiles de inversor.",
-  image: "/statiscaletfs.png",
+  image: "/stastiscaletfs.png",
   github: "https://github.com/fedemartinez5425/Codigos-Youtube/blob/main/Data%20Analysis/Statistical%20Analysis%20for%20ETF's/2-script-etfs-simplified.ipynb",
   link: null
 },
