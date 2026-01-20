@@ -6,6 +6,24 @@ import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
 
 const projects = [
   {
+  name: "📈 Análisis Estadístico de ETFs & Pruebas de Hipótesis",
+  description:
+    "Estudio cuantitativo sobre ETFs utilizando análisis estadístico, optimización de portafolios y pruebas de hipótesis. Incluye comparación Equity vs Bonds, Markowitz vs 60/40, análisis de correlaciones, PCA, HRP, VaR y CVaR, con conclusiones prácticas para distintos perfiles de inversor.",
+  image: "/statiscaletfs.png",
+  github: "https://github.com/fedemartinez5425/Codigos-Youtube/blob/main/Data%20Analysis/Statistical%20Analysis%20for%20ETF's/2-script-etfs-simplified.ipynb",
+  link: null
+},
+
+  {
+  name: "📊 Portfolio Financiero en Databricks",
+  description:
+    "Dashboard analítico desarrollado en Databricks para el análisis y seguimiento de un portafolio financiero. Incluye retornos, riesgo, métricas agregadas y visualizaciones orientadas a apoyar decisiones de inversión.",
+  image: "/portfoliodatabricks.png",
+  github: "https://github.com/fedemartinez5425/Databricks",
+  link: "https://dbc-e78805c9-ae33.cloud.databricks.com/dashboardsv3/01f0ed9878de1586bd10251efedfdc9d/published?o=1775234182689834"
+},
+
+  {
     name: "Modelo de Scoring para seleccionar acciones en una cartera de inversión (en proceso)",
     description:
       "Modelo cuantitativo para evaluar y clasificar acciones según métricas fundamentales, técnicas y de riesgo. Publicación inicial en LinkedIn.",

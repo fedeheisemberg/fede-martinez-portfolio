@@ -28,11 +28,18 @@ const HeroSection = () => {
               Analista de Datos
             </span>{" "}
             con base en Argentina.  
-            Ayudo a empresas a tomar mejores decisiones mediante{" "}
-            <span className="font-semibold">automatización de procesos, visualización de datos</span> y{" "}
-            <span className="font-semibold">análisis financiero.</span>  
-             Mi enfoque combina el mundo de los datos con la aplicabilidad real en los negocios.
+            Diseño sistemas en Python para{" "}
+            <span className="font-semibold">
+              analizar mercados, optimizar decisiones y mejorar procesos de negocio
+            </span>
+            {" "}a través de datos, automatización y análisis financiero.  
+            <br className="hidden md:block" />
+            Los dashboards y visualizaciones son el medio;{" "}
+            <span className="font-semibold">
+              la decisión correcta es el objetivo.
+            </span>
           </p>
+
 
           <div className="flex justify-center md:justify-start">
             <Link

@@ -72,9 +72,9 @@ const AboutSection = () => {
             <p>
               Hoy busco consolidarme como{" "}
               <span className="font-semibold text-teal-600">
-                Data Analyst con visión estratégica y financiera
-              </span>, aportando valor en organizaciones que necesiten convertir datos complejos en
-              <strong> decisiones claras, medibles y con impacto real</strong>.
+                analista orientado a sistemas de decisión, con foco financiero y de negocio
+              </span>, ayudando a organizaciones y personas a transformar datos complejos en{" "}
+              <strong>criterios claros para decidir, asignar recursos y gestionar riesgo</strong>.
             </p>
 
           </div>
@@ -102,9 +102,13 @@ const AboutSection = () => {
             ¿Cómo puedo ayudarte?
           </h2>
           <p className="text-lg text-neutral-700 dark:text-neutral-300 max-w-2xl mx-auto">
-            Ayudo a empresas a mejorar la eficiencia operativa, integrar análisis de datos y automatizar reportes para reducir tiempo y errores.  
-            Mi objetivo es que los datos se conviertan en una verdadera ventaja competitiva.
+            Ayudo a empresas y profesionales a analizar datos de negocio, evaluar escenarios
+            y automatizar procesos para tomar mejores decisiones.  
+            Trabajo tanto en análisis exploratorio y estadístico como en el diseño de
+            sistemas simples y reproducibles en Python que permitan entender qué está
+            pasando y qué conviene hacer.
           </p>
+
           <a
             href="mailto:fedemarti0107@gmail.com"
             className="inline-block mt-6 bg-teal-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-teal-700 transition-transform hover:scale-105"
