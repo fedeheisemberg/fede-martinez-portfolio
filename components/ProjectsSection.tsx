@@ -89,6 +89,14 @@ const projects = [
     link: "https://public.tableau.com/app/profile/federico.martinez3300/viz/DashboardML-HR/Dashboard1",
   },
   {
+    name: "Dashboard de Performance Regional & Control Operativo en Power BI",
+    description:
+      "Análisis integral de performance comercial desarrollado para un desafío de Lovelytics. Incluye un dashboard estratégico de ventas con métricas de cumplimiento recalibradas, análisis de dispersión para detectar outliers de eficiencia y un reporte operativo con lógica DAX avanzada (USERELATIONSHIP) para el seguimiento de pedidos vs. envíos.",
+    image: "/lovelytics-dashboard.png", // Asegurate de guardar tu captura con este nombre en la carpeta public
+    github: null, 
+    link: "#", // Aquí podés poner el link a tu portfolio o LinkedIn donde lo publiques
+  },
+  {
     name: "Dashboard — Base de datos Classic Models",
     description:
       "Dashboard ejecutivo en Tableau con métricas de ventas globales, márgenes y desempeño por línea de producto y región.",
