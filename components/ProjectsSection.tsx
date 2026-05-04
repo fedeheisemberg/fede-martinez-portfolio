@@ -14,23 +14,33 @@ const projects = [
     github: null,
     link: "https://www.linkedin.com/feed/update/urn:li:activity:7355216612196519936",
   },
-  {
-  name: "📈 Análisis Estadístico de ETFs & Pruebas de Hipótesis",
-  description:
-    "Estudio cuantitativo sobre ETFs utilizando análisis estadístico, optimización de portafolios y pruebas de hipótesis. Incluye comparación Equity vs Bonds, Markowitz vs 60/40, análisis de correlaciones, PCA, HRP, VaR y CVaR, con conclusiones prácticas para distintos perfiles de inversor.",
-  image: "/stastiscaletfs.png",
-  github: "https://github.com/fedemartinez5425/Codigos-Youtube/blob/main/Data%20Analysis/Statistical%20Analysis%20for%20ETF's/2-script-etfs-simplified.ipynb",
-  link: null
-},
 
   {
-  name: "📊 Portfolio Financiero en Databricks",
-  description:
-    "Dashboard analítico desarrollado en Databricks para el análisis y seguimiento de un portafolio financiero. Incluye retornos, riesgo, métricas agregadas y visualizaciones orientadas a apoyar decisiones de inversión.",
-  image: "/portfoliodatabricks.png",
-  github: "https://github.com/fedemartinez5425/Databricks",
-  link: "https://dbc-e78805c9-ae33.cloud.databricks.com/dashboardsv3/01f0ed9878de1586bd10251efedfdc9d/published?o=1775234182689834"
-},
+    name: "🚗 Uber Driver Analytics — EDA & Rentabilidad",
+    description:
+      "Análisis exploratorio y modelo de métricas de rentabilidad para conductores de Uber utilizando datos reales de la plataforma. Incluye visualización geoespacial de viajes, ingresos por zona y horario, análisis de eficiencia, cantidad de viajes, revenue por hora y métricas clave para optimizar decisiones operativas del conductor.",
+    image: "/uber-analytics.png",
+    github: "#",
+    link: null,
+  },
+
+  {
+    name: "📈 Análisis Estadístico de ETFs & Pruebas de Hipótesis",
+    description:
+      "Estudio cuantitativo sobre ETFs utilizando análisis estadístico, optimización de portafolios y pruebas de hipótesis. Incluye comparación Equity vs Bonds, Markowitz vs 60/40, análisis de correlaciones, PCA, HRP, VaR y CVaR, con conclusiones prácticas para distintos perfiles de inversor.",
+    image: "/stastiscaletfs.png",
+    github: "https://github.com/fedemartinez5425/Codigos-Youtube/blob/main/Data%20Analysis/Statistical%20Analysis%20for%20ETF's/2-script-etfs-simplified.ipynb",
+    link: null
+  },
+
+  {
+    name: "📊 Portfolio Financiero en Databricks",
+    description:
+      "Dashboard analítico desarrollado en Databricks para el análisis y seguimiento de un portafolio financiero. Incluye retornos, riesgo, métricas agregadas y visualizaciones orientadas a apoyar decisiones de inversión.",
+    image: "/portfoliodatabricks.png",
+    github: "https://github.com/fedemartinez5425/Databricks",
+    link: "https://dbc-e78805c9-ae33.cloud.databricks.com/dashboardsv3/01f0ed9878de1586bd10251efedfdc9d/published?o=1775234182689834"
+  },
 
   {
     name: "📊 Advanced Portfolio Optimizer",
@@ -40,14 +50,7 @@ const projects = [
     github: null,
     link: "https://portfoliopt.streamlit.app/",
   },
- {
- name: "Databricks Emissions Dashboard",
-  description:
-    "Dashboard para monitorear y analizar emisiones de carbono de distintas fuentes. Proyecto inicial usando por primera vez Databricks.",
-   image: "/databricks1.png",
-   github: null,
-   link: 'https://dbc-e78805c9-ae33.cloud.databricks.com/dashboardsv3/01f0ecc1bc76145598358dd27bb13519/published?o=1775234182689834'
- },
+
   {
     name: "OptionsPro Dashboard",
     description:
@@ -56,6 +59,7 @@ const projects = [
     github: "#",
     link: "https://optimaoptionspro.streamlit.app/",
   },
+
   {
     name: "Canal de YouTube — Data Finance",
     description:
@@ -64,6 +68,7 @@ const projects = [
     github: "https://github.com/fedemartinez5425",
     link: "https://www.youtube.com/@DataFinanceByFede",
   },
+
   {
     name: "Optima Consulting & Management LLC (2023–2025)",
     description:
@@ -72,6 +77,7 @@ const projects = [
     github: "https://github.com/fedeheisemberg/Optima-Landing-Page",
     link: "https://www.optimafinancials.com/",
   },
+
   {
     name: "Modelo de Machine Learning — Score Crediticio",
     description:
@@ -80,6 +86,7 @@ const projects = [
     github: "#",
     link: "https://creditscoremodel.streamlit.app/",
   },
+
   {
     name: "Machine Learning — Predicción de abandono de empleados",
     description:
@@ -88,14 +95,16 @@ const projects = [
     github: "#",
     link: "https://public.tableau.com/app/profile/federico.martinez3300/viz/DashboardML-HR/Dashboard1",
   },
+
   {
     name: "Dashboard de Performance Regional & Control Operativo en Power BI",
     description:
       "Análisis integral de performance comercial desarrollado para un desafío de Lovelytics. Incluye un dashboard estratégico de ventas con métricas de cumplimiento recalibradas, análisis de dispersión para detectar outliers de eficiencia y un reporte operativo con lógica DAX avanzada (USERELATIONSHIP) para el seguimiento de pedidos vs. envíos.",
-    image: "/lovelytics-dashboard.png", // Asegurate de guardar tu captura con este nombre en la carpeta public
+    image: "/lovelytics-dashboard.png",
     github: null, 
-    link: "#", // Aquí podés poner el link a tu portfolio o LinkedIn donde lo publiques
+    link: "#",
   },
+
   {
     name: "Dashboard — Base de datos Classic Models",
     description:
@@ -120,7 +129,6 @@ const ProjectsSection = () => {
             <SlideUp offset="-300px 0px -300px 0px">
               <div className="flex flex-col animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
                 
-                {/* Imagen */}
                 <div className="md:w-1/2">
                   {project.link ? (
                     <Link href={project.link} target="_blank" rel="noopener noreferrer">
@@ -143,7 +151,6 @@ const ProjectsSection = () => {
                   )}
                 </div>
 
-                {/* Descripción */}
                 <div className="mt-8 md:w-1/2">
                   <h1 className="text-3xl font-bold mb-4 text-teal-600">
                     {project.name}
