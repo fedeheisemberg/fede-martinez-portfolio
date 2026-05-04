@@ -19,7 +19,7 @@ const projects = [
     name: "🚗 Uber Driver Analytics — EDA & Rentabilidad",
     description:
       "Análisis exploratorio y modelo de métricas de rentabilidad para conductores de Uber utilizando datos reales de la plataforma. Incluye visualización geoespacial de viajes, ingresos por zona y horario, análisis de eficiencia, cantidad de viajes, revenue por hora y métricas clave para optimizar decisiones operativas del conductor.",
-    image: "/uber-analytics.png",
+    image: "/uberdriver.png",
     github: "#",
     link: null,
   },

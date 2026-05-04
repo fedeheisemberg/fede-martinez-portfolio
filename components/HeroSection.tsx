@@ -11,7 +11,7 @@ const HeroSection = () => {
         {/* Imagen */}
         <div className="md:mt-2 md:w-1/2 flex justify-center">
           <Image
-            src="/headshot.png"
+            src="/headshot3.png"
             alt="Federico Martinez"
             width={400}
             height={400}
