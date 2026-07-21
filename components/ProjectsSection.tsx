@@ -5,7 +5,14 @@ import SlideUp from "./SlideUp";
 import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
 
 const projects = [
-  
+    {
+    name: "🏆 Predicción Final Mundial 2026 — ML con Elo + Monte Carlo",
+    description:
+      "Modelo de Machine Learning para estimar probabilidades en partidos de selecciones nacionales, aplicado a la Final Argentina vs España del Mundial 2026. Incluye Elo Rating dinámico, doble ventana de forma reciente, rendimiento contra rivales Top-20, calibración de probabilidades (Isotonic Regression), interpretabilidad con SHAP y simulación Monte Carlo de 200.000 iteraciones para estimar al campeón incluyendo tiempo extra y penales.",
+    image: "/worldcup2026.png",
+    github: "#",
+    link: null,
+  },
   {
     name: "Modelo de Scoring para seleccionar acciones en una cartera de inversión (en proceso)",
     description:
